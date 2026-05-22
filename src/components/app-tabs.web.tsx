@@ -63,7 +63,7 @@ export function CustomTabList(props: TabListProps) {
         <ThemedText type="smallBold" style={styles.brandText}>
           NMK Music
         </ThemedText>
-
+        
         {props.children}
 
         
