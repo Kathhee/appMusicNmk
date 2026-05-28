@@ -26,21 +26,21 @@ export default function Index({ navigation }: any) {
       nome: 'Rock',
       cor: '#7358FF',
       imagem:
-        'https://www.pinterest.com/pin/708472585115093026/',
+        'https://img.magnific.com/vetores-gratis/tipo-de-letra-pirata_1284-47239.jpg?semt=ais_hybrid&w=740&q=80',
     },
     {
       id: 3,
       nome: 'Funk',
       cor: '#00A86B',
       imagem:
-        'https://i.scdn.co/image/ab67706f000000026b84c7dd8c4e3e4e4f8b2ff1',
+        'https://upload.wikimedia.org/wikipedia/pt/5/57/Funk_Brasil_Especial.jpg',
     },
     {
       id: 4,
       nome: 'Hip Hop',
       cor: '#D84040',
       imagem:
-        'https://i.scdn.co/image/ab67706f0000000279e5db45929f203d4c0c1ff3',
+        'https://i.pinimg.com/736x/d9/b8/b4/d9b8b48fc77b01bde11611ba45bbd3a6.jpg',
     },
   ];
 
@@ -64,14 +64,14 @@ export default function Index({ navigation }: any) {
       nome: 'Trap Internacional',
       artista: 'Travis Scott e mais',
       imagem:
-        'https://i.scdn.co/image/ab67706f0000000279e5db45929f203d4c0c1ff3',
+        'https://i.pinimg.com/736x/d9/b8/b4/d9b8b48fc77b01bde11611ba45bbd3a6.jpg',
     },
     {
       id: 4,
       nome: 'Rock Classics',
       artista: 'Queen, Nirvana...',
       imagem:
-        'https://i.scdn.co/image/ab67706f0000000296f754a5d9f3fbb2d4c35fca',
+        'https://img.magnific.com/vetores-gratis/tipo-de-letra-pirata_1284-47239.jpg?semt=ais_hybrid&w=740&q=80',
     },
   ];
 
@@ -85,7 +85,7 @@ export default function Index({ navigation }: any) {
       >
         {/* HEADER */}
         <View style={styles.header}>
-          <Text style={styles.title}>Boa noite 🎵</Text>
+          <Text style={styles.title}>O que gostaria de ouvir?</Text>
 
           {/* PESQUISA */}
           <TextInput

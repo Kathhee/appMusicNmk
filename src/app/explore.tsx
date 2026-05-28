@@ -33,7 +33,7 @@ export default function Explore({ navigation }: any) {
       nome: 'Rap & Trap',
       descricao: 'Trap, rap e hip hop',
       imagem:
-        'https://i.scdn.co/image/ab67706f0000000279e5db45929f203d4c0c1ff3',
+        'https://i.pinimg.com/736x/d9/b8/b4/d9b8b48fc77b01bde11611ba45bbd3a6.jpg',
       tela: 'ListaReproducao',
     },
     {
@@ -41,7 +41,7 @@ export default function Explore({ navigation }: any) {
       nome: 'Rock Classics',
       descricao: 'Clássicos do rock mundial',
       imagem:
-        'https://i.scdn.co/image/ab67706f0000000296f754a5d9f3fbb2d4c35fca',
+        'https://img.magnific.com/vetores-gratis/tipo-de-letra-pirata_1284-47239.jpg?semt=ais_hybrid&w=740&q=80',
       tela: 'ListaReproducao',
     },
     {
@@ -49,7 +49,7 @@ export default function Explore({ navigation }: any) {
       nome: 'Funk Brasil',
       descricao: 'Os funks mais ouvidos',
       imagem:
-        'https://i.scdn.co/image/ab67706f000000026b84c7dd8c4e3e4e4f8b2ff1',
+        'https://upload.wikimedia.org/wikipedia/pt/5/57/Funk_Brasil_Especial.jpg',
       tela: 'ListaReproducao',
     },
     {
