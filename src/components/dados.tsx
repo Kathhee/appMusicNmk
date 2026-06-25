@@ -110,7 +110,7 @@ export function CurtidasProvider({ children }: { children: React.ReactNode }) {
   const [isPlaying, setIsPlaying] = useState(false);
 
   const tocarMusica = async (musica: Musica) => {
-    if (!musica.audioUrl) return; // Se não tiver áudio, não faz nada
+    if (!musica.audioUrl) return; 
     try {
       if (sound) await sound.unloadAsync();
       const { sound: novoSom } = await Audio.Sound.createAsync({ uri: musica.audioUrl });
@@ -138,12 +138,12 @@ const compartilharMusica = async (musica: Musica) => {
   const mensagem = `Estou a ouvir "${musica.nome}" de ${musica.artista} no NMK Music! 🎧`;
   
   if (Platform.OS === 'web') {
-    // Para Web: abre o WhatsApp com a mensagem
+    
     const urlCompartilhamento = window.location.origin + `/listaReproducao?id=${musica.id}`;
     const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(mensagem + ' ' + urlCompartilhamento)}`;
     window.open(whatsappUrl, '_blank');
   } else {
-    // Para Mobile: usa a API nativa do sistema
+   
     try {
       await Share.share({
         message: `${mensagem} \n\nOuça aqui: https://nmkmusic.com/track/${musica.id}`,

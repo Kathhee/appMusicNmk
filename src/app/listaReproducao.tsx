@@ -5,11 +5,11 @@ import { Footer } from '../components/Footer';
 
 export default function ListaReproducao() {
   const params = useLocalSearchParams();
-  // Adicionamos tocarMusica, pausarMusica e isPlaying do contexto
+  
   const { alternarCurtida, verificarSeEstaCurtida, tocarMusica, pausarMusica, isPlaying } = useCurtidas();
 
   const musicaAtual = {
-    id: (params.id as string) || '101', // Corrigi o default para 101
+    id: (params.id as string) || '101', 
     nome: (params.nome as string) || 'Blinding Lights',
     artista: (params.artista as string) || 'The Weeknd',
     imagem: (params.imagem as string) || 'https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?w=500&q=80',
@@ -19,7 +19,7 @@ export default function ListaReproducao() {
 
   const isCurtida = verificarSeEstaCurtida(musicaAtual.id);
 
-  // Lógica para alternar play/pause
+
   const handlePlayPause = () => {
     if (isPlaying) {
       pausarMusica();
@@ -50,12 +50,12 @@ export default function ListaReproducao() {
         </View>
 
         <View style={styles.controlsRow}>
-          {/* Botão Anterior */}
+         
           <Pressable style={styles.controlBtn}>
             <Text style={styles.controlText}>⏮</Text>
           </Pressable>
 
-          {/* Botão Play/Pause Dinâmico */}
+          
           <Pressable 
             style={styles.playPauseBtn} 
             onPress={handlePlayPause}
@@ -63,7 +63,7 @@ export default function ListaReproducao() {
             <Text style={styles.playIcon}>{isPlaying ? '⏸' : '▶'}</Text>
           </Pressable>
 
-          {/* Botão Próxima */}
+         
           <Pressable style={styles.controlBtn}>
             <Text style={styles.controlText}>⏭</Text>
           </Pressable>
@@ -75,7 +75,6 @@ export default function ListaReproducao() {
 }
 
 const styles = StyleSheet.create({
-  // ... mantenha seus estilos originais, apenas adicionei ajustes se necessário
   container: { flex: 1, backgroundColor: '#0B0B0E' },
   scroll: { alignItems: 'center', padding: 25, paddingBottom: 110 },
   topNavTitle: { color: '#FFF', fontSize: 18, fontWeight: 'bold', marginVertical: 15 },

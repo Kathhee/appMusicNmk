@@ -11,11 +11,10 @@ export default function Layout() {
       <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
         <AnimatedSplashOverlay />
         
-        {/* Usamos o Stack aqui para que ele gerencie as telas e a Navbar */}
         <Stack
           screenOptions={{
             headerStyle: {
-              backgroundColor: '#0B0B0E', // Fundo escuro
+              backgroundColor: '#0B0B0E',
             },
             headerTintColor: '#FFF',
             headerTitleStyle: {
@@ -26,7 +25,6 @@ export default function Layout() {
             headerShadowVisible: false,
           }}
         >
-          {/* As telas são registradas aqui e o Stack gera a Navbar automaticamente */}
           <Stack.Screen name="index" options={{ title: 'NMK Music' }} />
           <Stack.Screen name="listaReproducao" options={{ title: 'Tocando Agora' }} />
           <Stack.Screen name="explore" options={{ title: 'Explorar' }} />
